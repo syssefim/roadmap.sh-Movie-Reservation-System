@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Link your external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Your website content goes here -->
+    <p>base here. But where's home?</p>
+    {% block content %}{% endblock %}
+
+    <!-- Link your external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -5,4 +5,4 @@ views = Blueprint('views', __name__)
 # home
 @views.route('/')
 def home():
-    return "Reserve movies here"
+    return render_template("home.html")
