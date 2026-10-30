@@ -6,10 +6,16 @@ def create_app():
 
 
     # Register Blueprints
-    from .views import views
+    # from .views import views
     from .auth import auth
+    from .movies import movies
+    from .reservations import reservations
+    from .showtimes import showtimes
 
-    app.register_blueprint(views, url_prefix='/')
+    # app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
+    app.register_blueprint(movies, url_prefix='/')
+    app.register_blueprint(reservations, url_prefix='/')
+    app.register_blueprint(showtimes, url_prefix='/')
     
     return app
