@@ -22,8 +22,6 @@ def connect():
         )
 
 
-
-
 def init_db():
     conn = connect()
     try:
@@ -34,15 +32,10 @@ def init_db():
         conn.close()
 
 
-
 def close_connection():
     conn.commit()
     cur.close()
     conn.close()
 
 
-
-
-
-if __name__ == "__main__":
-    connect()
+# def query():
